@@ -5,7 +5,7 @@ using ApprovalTests;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
 
-namespace GildedRose
+namespace GildedRose.Tests.TestCollections
 {
     [UseReporter(typeof(DiffReporter))]
     [TestFixture]
@@ -14,7 +14,6 @@ namespace GildedRose
         [Test]
         public void ThirtyDays()
         {
-            
             StringBuilder fakeoutput = new StringBuilder();
             Console.SetOut(new StringWriter(fakeoutput));
             Console.SetIn(new StringReader("a\n"));
